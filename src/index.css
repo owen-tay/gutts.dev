@@ -1,0 +1,136 @@
+/*imports*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/*homepage rounded bot*/
+
+.roundededge {
+  padding-top: 6rem;
+border-top-left-radius: 50%;
+border-top-right-radius: 50%;
+}
+
+/*service Background*/
+
+.serviceBG {
+  background: url("./components/images/bulb.jpg") no-repeat center;
+  background-size:cover;
+}
+
+/*selection colour*/
+
+::selection {
+  background: #F198FF; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #F198FF; /* Gecko Browsers */
+}
+
+/*for pink text*/
+
+.text-pink-conjury::selection {
+  background: #43f9ff; /* WebKit/Blink Browsers */
+}
+.text-pink-conjury::-moz-selection {
+  background: #43f9ff; /* Gecko Browsers */
+}
+
+
+/*google fonts*/
+body {
+  font-family: 'Mukta', sans-serif;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
+
+/*dark mode toggle*/
+
+.display-none {
+  @apply hidden;
+}
+
+/*animation*/
+/*header text*/
+.fadein {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.fadeinfast {
+  animation: fadeInAnimation ease 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+/*homepage images*/
+.homeimage1 {
+  margin-left: -5rem;
+}
+
+
+/*animations*/
+
+.fadeinslow {
+  animation: fadeInAnimationslow ease 10s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(150px);
+  animation: slide-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(-150px);
+  animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
