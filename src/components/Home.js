@@ -80,7 +80,7 @@ const Home = () => {
             <div className="w-full md:w-1/2 mb-10">
               <div className="text-xl">
                 <div className="title fadein py-5 text-5xl sm:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl  text-black dark:text-white font-bold text-center md:text-left">
-                  We are Conjury. We make great websites.
+                  We are Gutts
                 </div>
                 <div className=" title fadein relative text-xl text-center md:text-left md:text-2xl xl:text-2xl">
                   We are a recently established web development and design

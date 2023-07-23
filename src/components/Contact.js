@@ -50,12 +50,12 @@ const Contact = () => {
               <div className="flex-col">
                 Email Us:
                 <div className=" font-bold text-lg sm:text-xl">
-                  support@conjury.dev
+                  support@
                 </div>
               </div>
             </div>
             <a
-              href="https://www.facebook.com/profile.php?id=100094065408260/"
+              href="https://www.facebook.com/"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -6,7 +6,6 @@ import conjure from "./images/conjuretext.svg";
 
 function Footer() {
   const currentYear = new Date().getFullYear();
-  const author = " - Owen Taylor";
 
   return (
     <footer className="bg-gray-100 py-6">
